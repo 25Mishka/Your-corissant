@@ -1,6 +1,7 @@
 h1 {
   color: black;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -9,9 +10,28 @@ body {
 }
 
 .thephoto {
-  width: 100% !important;
+  width: 100%;
+  max-width: 90%;
 
   border-radius: 10px !important;
   display: block !important;
   margin: 30px auto !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .thephoto {
+    max-width: 70%; /* Adjust for large to medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .thephoto {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .thephoto {
+    max-width: 90%;
+  }
 }
